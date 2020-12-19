@@ -9,97 +9,155 @@
       rel="stylesheet"
     />
     <link href="css/normalize.css" rel="stylesheet" />
-    <!-- <link href="css/glitch.css" rel="stylesheet" /> -->
+    <link href="css/glitch.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
   </head>
   <body>
-    <!--
-TODO header: главный див, потом 3 дива в нем, левый див с именем и фото. 
-TODO section: главный див, в нем 2 дива для левого и правого блока.
-TODO левый див: 4 дива, пункты и реклама
-TODO правый див: 2 дива
-TODO footer: главный див и в нем два дива по краям
-    -->
-    <header>
-      <div class="header-menu">
-        <div class="header__menu-item header-left userpic">
-          <img class="userpic-img" src="/img/userpic.jpg" alt="" />
-          <!-- <p class="name">Дарина Ширякова</p> -->
+    <div class="general">
+      <header>
+        <div class="header-menu">
+          <div class="header__menu-item header-left userpic">
+            <img class="userpic-img" src="/img/userpic.jpg" alt="" />
+            <!-- <p class="name">Дарина Ширякова</p> -->
+          </div>
+          <div class="header__menu-item name header-left">
+            <!-- <p>Дарина Ширякова</p> -->
+          </div>
+          <div
+            class="header__menu-item title glitch"
+            data-text="
+    DarinaColor"
+          >
+            DarinaColor
+          </div>
+          <div class="header__menu-item contacts">
+            <a class="contacts-item" href="#main__content-contacts"
+              >Дарина Ширякова</a
+            >
+          </div>
         </div>
-        <div class="header__menu-item name header-left">
-          <p>Дарина Ширякова</p>
-        </div>
-        <div
-          class="header__menu-item title glitch"
-          data-text="
-          DarinaColor"
-        >
-          DarinaColor
-        </div>
-        <div class="header__menu-item contacts">
-          <a class="contacts-item" href="#">Мои контактыыы</a>
-        </div>
+      </header>
+      <div class="main__content">
+        <section id="main__content-about">
+          <h2 class="h-title">Обо мне</h2>
+          <p>Привет, меня зовут Дарина, я колорист</p>
+          <img class="Photo" src="/img/about.jpg" alt="" />
+        </section>
+        <section id="main__content-portfolio">
+          <h2 class="h-title">Мои работы</h2>
+          <p>Здесь показаны некоторые мои работы</p>
+          <div class="main__content-list">
+            <a target="_blank" href="/img/list-items/1.jpg"
+              ><img
+                src="/img/list-items/thumb/1_thumb.jpg"
+                alt=""
+                class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/2.jpg"
+              ><img
+                src="/img/list-items/thumb/2_thumb.jpg"
+                alt=""
+                class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/1.jpg"
+              ><img src="/img/list-items/1.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/2.jpg"
+              ><img src="/img/list-items/2.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/1.jpg"
+              ><img src="/img/list-items/1.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/2.jpg"
+              ><img src="/img/list-items/2.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/1.jpg"
+              ><img src="/img/list-items/1.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/2.jpg"
+              ><img src="/img/list-items/2.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/1.jpg"
+              ><img src="/img/list-items/1.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/2.jpg"
+              ><img src="/img/list-items/2.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/1.jpg"
+              ><img src="/img/list-items/1.jpg" alt="" class="list-items"
+            /></a>
+            <a target="_blank" href="/img/list-items/2.jpg"
+              ><img src="/img/list-items/2.jpg" alt="" class="list-items"
+            /></a>
+          </div>
+        </section>
+        <section class="main__content-contacts" id="main__content-contacts">
+          <h2 class="h-title">Контакты</h2>
+          <p>
+            Связаться со мной можно через инстаграм, либо написать на почту:
+          </p>
+          <a target="_blank" href="https://www.instagram.com/darina_color/"
+            ><img src="/img/ico/insta.png" alt=""
+          /></a>
+          <form action="" method="get">
+            <input
+              disable
+              class="form-item"
+              required
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+            <input
+              disabled
+              class="form-item"
+              required
+              type="city"
+              name="city"
+              placeholder="Город"
+            />
+            <input
+              disabled
+              class="form-item"
+              required
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+            />
+            <input
+              disabled
+              class="form-item"
+              required
+              type="email"
+              name="email"
+              placeholder="Почта"
+            />
+            <textarea
+              disabled
+              class="form-item textarea"
+              name=""
+              id=""
+              placeholder="Напишите ваши пожелания к заказу или отзыв"
+            ></textarea>
+            <button disable type="submit" class="form-item btn">
+              Отправить
+            </button>
+          </form>
+        </section>
       </div>
-    </header>
-    <section class="main-container">
-      <div class="main__container-left sidebar">
-        <ul class="main__menu">
-          <li class="main__menu-item-1 about-item">Обо мне</li>
-          <li class="main__menu-item-2 career-item">Карьера</li>
-          <li class="main__menu-item-3 portfolio-item">Портфолио</li>
-        </ul>
-        <div class="adv">РЕКЛАМА</div>
-      </div>
-      <div class="main__container-right content">
-        <p class="main-title about">Обо мне</p>
-        <img class="Photo" src="/img/about.jpg" alt="" />
-        <p class="text">
-          <span
-            >Далеко-далеко за словесными горами в стране гласных и согласных
-            живут, рыбные тексты. Все вдали ему даль послушавшись букв
-            необходимыми приставка инициал lorem? Реторический своих
-            использовало все текста журчит сих ipsum но решила!</span
-          >
-          <span
-            >Грустный обеспечивает всемогущая осталось лучше за! Залетают диких
-            своего его вопрос по всей языкового своих большой. Гор букв страну
-            предупреждал маленькая? Злых безопасную имени, агентство власти
-            ведущими даль толку города рыбного!</span
-          >
-          <span
-            >Ты рыбного себя, рукопись первую бросил лучше однажды осталось
-            реторический курсивных большого они возвращайся агентство журчит
-            языком залетают грамматики вершину. Родного пунктуация дорогу он
-            свой, точках то? Грамматики, сих маленькая?</span
-          >
-          <span
-            >Большого диких страну, снова свой силуэт алфавит дороге, несколько
-            переписывается своих инициал коварный вскоре. Напоивший пояс lorem
-            оксмокс снова по всей заглавных свою, выйти использовало всемогущая
-            речью алфавит коварный но своих.</span
-          >
-          <span
-            >Журчит дал своего щеке родного путь? Образ подпоясал буквоград моей
-            страну города оксмокс даже семантика маленький парадигматическая.
-            Переписывается свою, решила от всех всеми подзаголовок повстречался
-            языком. Заманивший свой если рыбными себя?</span
-          >
-        </p>
-        <div></div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-container">
-        <div class="footer__container-left">
-          <p class="footer-author">Дизайн разработан SJ Company</p>
-        </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer__container-left">
+            <p class="footer-author">Дизайн разработан SJ</p>
+          </div>
 
-        <div class="footer__container-right">
-          <a href="#" class="socials">ВК</a>
-          <a href="#" class="socials">LINKEDIN</a>
-          <a href="#" class="socials">FL</a>
+          <div class="footer__container-right">
+            <a href="#" class="socials">ВК</a>
+            <a href="#" class="socials">LINKEDIN</a>
+            <a href="#" class="socials">FL</a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
